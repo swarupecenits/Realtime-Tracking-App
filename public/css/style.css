@@ -18,8 +18,8 @@ html, body {
 /* Button styles */
 #my-location-btn { 
     position: absolute; 
-    bottom: 20px;      
-    right: 20px;        
+    bottom: 0;      
+    right: 0;        
     z-index: 1000;      
     cursor: pointer;    
     display: flex;
