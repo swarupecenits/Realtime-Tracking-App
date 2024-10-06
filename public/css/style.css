@@ -71,7 +71,7 @@ html, body {
 
 @media (max-width: 480px) {
     #my-location-btn {
-        bottom: 15rem; 
+        bottom: 10rem; 
         right: 0.5rem; 
         font-size: 14px; 
         padding: 0.5em 0.8em; 
