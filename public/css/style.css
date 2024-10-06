@@ -1,15 +1,63 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html, body {
     width: 100%;
     height: 100%;
 }
 
-#map{
+#map { 
+    height: 100vh; 
     width: 100%;
-    height: 100%;
+    position: relative; 
+}
+
+/* Button styles */
+#my-location-btn { 
+    position: absolute; 
+    bottom: 20px;      
+    right: 20px;        
+    z-index: 1000;      
+    cursor: pointer;    
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+}
+
+#my-location-btn svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+#my-location-btn span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+#my-location-btn:hover svg {
+    transform: translateX(5px) rotate(90deg);
+}
+
+#my-location-btn:hover span {
+    transform: translateX(7px);
+}
+
+#sidebar{
+    right: 0;
+    top: 0;
+    position: absolute; 
+    z-index: 1000000;
 }
