@@ -15,17 +15,16 @@ html, body {
     position: relative; 
 }
 
-/* Button styles */
+/* Default button styles */
 #my-location-btn { 
     position: absolute; 
-    bottom: 0;      
-    right: 0;        
+    bottom: 2rem;      
+    right: 2rem;        
     z-index: 1000;      
     cursor: pointer;    
     display: flex;
     align-items: center;
     font-family: inherit;
-    cursor: pointer;
     font-weight: 500;
     font-size: 17px;
     padding: 0.8em 1.3em 0.8em 0.9em;
@@ -54,6 +53,36 @@ html, body {
 #my-location-btn:hover span {
     transform: translateX(7px);
 }
+
+/* Media queries for small screens */
+@media (max-width: 768px) {
+    #my-location-btn {
+        bottom: 5rem; 
+        right: 1rem; 
+        font-size: 15px; 
+        padding: 0.6em 1em; 
+        border-radius: 12px; 
+    }
+
+    #my-location-btn svg {
+        margin-right: 2px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #my-location-btn {
+        bottom: 15rem; 
+        right: 0.5rem; 
+        font-size: 14px; 
+        padding: 0.5em 0.8em; 
+        border-radius: 10px;
+    }
+
+    #my-location-btn svg {
+        margin-right: 1px; 
+    }
+}
+
 
 #sidebar{
     right: 0;
