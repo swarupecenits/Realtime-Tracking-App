@@ -84,9 +84,76 @@ html, body {
 }
 
 
-#sidebar{
+
+/* Sidebar styles */
+#sidebar {
     right: 0;
     top: 0;
     position: absolute; 
     z-index: 1000000;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 300px; 
+    margin: 1rem;
+    width: 100%;
+    height: auto; 
+    overflow-y: auto;
+}
+
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 1rem; 
+}
+
+
+thead th {
+    background-color: #302b63; 
+    color: white; 
+    padding: 10px;
+    text-align: left; 
+    border-bottom: 2px solid #24243e; 
+}
+
+
+tbody tr {
+    background-color: rgba(255, 255, 255, 0.8); 
+    transition: background-color 0.3s; 
+}
+
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1; 
+}
+
+
+tbody tr:hover {
+    background-color: rgba(50, 43, 99, 0.1); 
+}
+
+
+#connected-users {
+    color: #ad5389; 
+    font-weight: bold; 
+}
+
+
+
+@media (max-width: 480px) {
+    
+    #sidebar {
+        padding: 15px; 
+    }
+
+    table {
+        font-size: 12px; 
+    }
+
+    thead th, tbody td {
+        padding: 5px;
+    }
 }
